@@ -19,7 +19,7 @@ RUN cd /tmp && \
   find build -type f \( -name "libllama.so" -o -name "libggml.so" -o -name "libggml-base.so" -o -name "libggml-cpu.so" \) -exec cp {} /usr/local/lib/llama/ \;
 
 # Use the SearXNG image as the base for final image
-FROM searxng/searxng:2026.4.29-cba0cffa8
+FROM searxng/searxng:2026.5.2-cd75013c9
 
 # Set the default port to 7860 if not provided
 ENV PORT=7860
